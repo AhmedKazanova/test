@@ -206,7 +206,7 @@ section.highlights h4:before {
     border-radius: 50%;
 }
 section.highlights p {
-    font-size: 13px;
+    font-size: 1.7rem;
     line-height: 22px;
     color: #7d7a7a;
 }
@@ -220,6 +220,11 @@ section.video-intro {
     padding: 100px 0;
     position: relative;
     overflow: hidden;
+}
+.video-intro .col-md-4 {
+    position: relative;
+    z-index: 4;
+
 }
 section.video-intro h6 {
     text-transform: uppercase;
@@ -248,7 +253,7 @@ section.video-intro h2 {
     margin-bottom: 20px;
 }
 section.video-intro p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #7d7a7a;
     margin-bottom: 15px;
 }
@@ -273,6 +278,7 @@ text-decoration: none;
 }
 section.video-intro .video {
     position: relative;
+    z-index: 3;
 }
 section.video-intro .video img {
     width: 100%;
@@ -283,9 +289,7 @@ section.video-intro .video img {
     padding: 10px;
 }
 section.video-intro .play-btn {
-    width: 76px;
-    height: 76px;
-    line-height: 76px;
+    padding: 15px 25px;
     display: inline-block;
     color: #fff;
     background: #8a39ee;
@@ -301,15 +305,31 @@ section.video-intro .play-btn {
     text-align: center;
     font-size: 20px;
 }
-section.video-intro:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 60%;
-    right: 0px;
-    bottom: 0px;
-    background: url(/images/right-bg.jpg) no-repeat bottom;
+section.video-intro:before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    left: 50%; 
+    top: 0; 
+    background: url(../images/right-bg.jpg) no-repeat bottom; 
+    background-size: auto 100%; 
+    z-index: 2;
 }
+section.video-intro:after{
+    content: ''; 
+    width: 100%; 
+    height: 100%; 
+    background: url(../images/right-image-mask.png) left top no-repeat; 
+    position: absolute; 
+    left: 50%; 
+    top: 0; 
+    z-index: 2; 
+    background-size: auto 100%;
+}
+
+
+
 /* ************ video-intro *********************** */
 
 /* ************ intro *********************** */
@@ -403,17 +423,13 @@ section.featured-services h2 {
     color: #fff;
 }
 section.featured-services i {
-    width: 70px;
-    height: 70px;
+    padding: 10px 20px;
     border: 3px solid rgba(255,255,255,0.2);
     border-radius: 50%;
     font-size: 32px;
     margin-bottom: 60px;
-    float: left;
     color: #ffbb3f;
     text-align: center;
-    line-height: 66px;
-    margin-right: 30px;
 }
 section.featured-services h4 {
     font-weight: 700;
@@ -423,10 +439,18 @@ section.featured-services h4 {
     position: relative;
     padding-bottom: 15px;
 }
+.featured-services h4:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #ffbb3f;
+    position: absolute;
+    left:0px;
+    bottom: 0;
+}
 section.featured-services p {
     font-size: 14px;
     padding-right: 10%;
-    margin-bottom: 40px;
     color: #fff;
 }
 /* ************ featured-services *********************** */
@@ -1157,7 +1181,6 @@ section.work-process h2{
 }
 section.work-process .circles{ 
     width:100%; 
-    height:300px; 
     background-repeat:no-repeat;
     background-image:url(../images/process-circles.png); 
     background-size:100% auto;
@@ -1546,7 +1569,7 @@ border:2px solid rgba(255,255,255,0.3); text-align:center; line-height:46px; bor
 .footer .newsletter small{ width:100%;font-size: 1.6rem; }
 .footer .video{  width: 100%;  position: relative;}
 .footer .video img{ width: 100%; }
-.footer .video .play-btn{ width: 66px; height: 66px; line-height: 66px; display:inline-block; color:#fff; background: #ffbb3f; font-weight:700; border-radius: 66px; box-shadow: 0 20px 30px rgba(0,0,0,0.05); border:2px solid transparent; position: absolute; left: 50%; top: 50%; margin-left: -38px; margin-top: -38px; text-align: center; font-size: 20px;}
+.footer .video .play-btn{ width: 66px;font-size: 2rem;padding: 15px ; display:inline-block; color:#fff; background: #ffbb3f; font-weight:700; border-radius: 66px; box-shadow: 0 20px 30px rgba(0,0,0,0.05); border:2px solid transparent; position: absolute; left: 50%; top: 50%; margin-left: -38px; margin-top: -38px; text-align: center;}
 .footer .video .play-btn:after{content: ''; width: 86px; height: 86px; position: absolute; left: -12px; top: -12px; border-radius: 50%;  border: 10px solid rgba(0,0,0,0.3); }
 .footer .video .play-btn:hover{ text-decoration: none; box-shadow: 0 20px 30px rgba(0,0,0,0.20);}
 .footer .footer-menu{ width:100%;  margin:0; margin-top:-4px; padding:0;}
@@ -1569,11 +1592,74 @@ border:2px solid rgba(255,255,255,0.3); text-align:center; line-height:46px; bor
     #carouselExampleCaptions img {
         min-height: 100vh;
     }
-    section.video-intro:before {
-        left: 90%;
+    .video-intro .col-md-4 {
+        margin-bottom: 50px;
     }
-}
+
+    section.left-side-content .side-image,
+    section.right-side-content .side-image {
+        display: none !important;
+    }
+    section.left-side-content .side-image:after,
+    section.right-side-content .side-image:after{
+        display: none !important;
+    }
+    section.work-process .circles {
+        background-image: none !important;
+    }
     
+}
+ 
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	h2{font-size: 30px !important; line-height: 42px !important; padding: 0 !important;}
+	h6{ font-size: 12px !important;}
+	.navbar-default .navbar-brand img{height: 30px;}
+	.navbar-default .top-bar .social-text{margin-left: 0;}
+	.navbar-toggle{margin-top: 22px; border: none;}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background: none;}
+	.navbar-default .navbar-toggle .icon-bar{ background: #fff;}
+	.navbar-default.fixed-active .navbar-toggle .icon-bar{ background: #ffbb3f;}
+	.navbar-default.fixed-active .since{display: none;}
+	.cbp-spmenu{background: #9193a4; text-align: left; padding:20px 30px;}
+	.cbp-spmenu .top-menu{ width: 100%;  margin: 0; margin-bottom: 20px; padding: 0;}
+	.cbp-spmenu .top-menu li{ width: 100%;  margin: 3px 0; padding: 0; list-style: none;}
+	.cbp-spmenu .top-menu li a{ color: #fff; font-size: 14px;}
+	.cbp-spmenu .navbar-nav{ width: 100%;  margin: 0; padding: 0;}
+	.cbp-spmenu .navbar-nav li{ width: 100%;  margin: 5px 0; padding: 0; list-style: none;}
+	.cbp-spmenu .navbar-nav li a{ margin: 0; padding: 0; color: #fff !important;}
+	.cbp-spmenu .navbar-nav li a:after{display: none;}
+	.cbp-spmenu .navbar-nav li .dropdown-menu{ background: none !important; border:none !important; padding: 0; margin-bottom: 10px; padding-left: 10px;}
+	.cbp-spmenu .navbar-nav li .dropdown-menu li{ width: 100%;  margin: 0; padding: 0;}
+	.cbp-spmenu .navbar-nav li .dropdown-menu li a{padding: 0; margin: 2px 0; font-size: 12px;}
+	.cbp-spmenu .search{  color: #fff !important;}
+	.testimonials .testimonial-box{ width: 100%; margin: 50px 0;}
+	.gallery ul li{ width: 100%;}
+	.gallery ul li.big{ width: 100%;}
+	.partners ul li{ width: 100%;}
+	.work-process .circles{height: auto;}
+	.work-process .circles .text-left{text-align: center;}
+	.work-process .circles .text-right{text-align: center;}
+	.work-process .circles .icon-border{ margin-bottom: 15px;}
+	.our-offices .office-box{ width: 100%;}
+	.support .support-box{text-align: center;}
+	.support .support-box img{  margin-bottom: 10px;}
+	.latest-news .news-box{margin-bottom: 30px;}
+	.career .position-list li h5{ margin-bottom: 10px;}
+	.pricing .price-box{ width: 90%; margin: 15px 5%;}
+	.pricing .price-box.recommended{ margin-top:30px; }
+	.blog .sidebar{padding-left: 0;}
+	.blog .sidebar .widget{padding: 25px 0; border-left: 0;}
+	.search-box.active{ z-index: 9999;}
+	.search-box form{ padding: 0; text-align: center;}
+	.search-box form input[type="text"]{ width: 100%; text-align: center;}
+	.search-box form button[type="submit"]{ display: inline-block; }
+	.support-bar a{ width: 100%; text-align: center;}
+	.support-bar img{display: none;}
+	.footer .footer-bar address i{ width: 35px; margin-bottom: 10px;}
+	.footer .sub-footer .container{font-size: 11px;}
+	.footer .sub-footer .text-right{ text-align: left;}
+	.footer .sub-footer .col-xs-12{margin: 5px 0;}
+}
 @media (max-width: 500px) {
 html {
  font-size: 60%;
