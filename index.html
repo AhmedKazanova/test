@@ -3,14 +3,16 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Raeda</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-dark">
@@ -57,14 +59,28 @@
 <!-- <img src="/images/logo-dark.png" class="logo-dark" alt=""> -->
 </a>
 
-<div class="links d-none d-md-flex justify-content-lg-center  justify-content-end  col-md-9 ">
-    <a href="">Home</a>
-    <a href="">Pages</a>
-    <a href="">Project</a>
-    <a href="">Services</a>
-    <a href="">News</a>
-    <a href="">Contact</a>
-    <a href=""><span class="phone"><i class="fa fa-phone" aria-hidden="true"></i> +38 075 92 47</span></a>
+<div class="links d-none d-md-flex justify-content-md-center align-items-center  justify-content-end  col-md-9 ">
+    <a href="index.html" class="mx-lg-3">Home</a>
+   
+    <div class="nav-item dropdown text-white mx-lg-3 p-0">
+      <a aria-label="Home" href="#"  class="nav-link " data-bs-toggle="dropdown">
+        <span class="col-11 col-lg-8 text-start  text-nowrap "> Pages </span>
+      </a>
+      <div class="dropdown-menu m-0">
+        <a href="about.html" aria-label="Read About Us" class="dropdown-item">About Us</a>
+        <a aria-label="Read Solutions" class="dropdown-item">Solutions</a>
+        <a aria-label="Read Partners" class="dropdown-item">Partners</a>
+        <a aria-label="Read Gallery" class="dropdown-item">Gallery</a>
+        <a aria-label="Read Pricing" class="dropdown-item">Pricing</a>
+        <a aria-label="Read FAQ" class="dropdown-item">FAQ</a>
+      </div>
+    </div>
+    
+    <a href="" class="mx-lg-3">Project</a>
+    <a href="" class="mx-lg-3">Services</a>
+    <a href="news.html" class="mx-lg-3">News</a>
+    <a href="contact.html" class="mx-lg-3">Contact</a>
+    <a href="" class="mx-lg-3"><span class="phone"><i class="fa fa-phone" aria-hidden="true"></i> +38 075 92 47</span></a>
 </div>
 
 <div class="d-md-none">
@@ -96,10 +112,24 @@
 
 <ul class="navbar-nav justify-content-end flex-grow-1 p-4">
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="#">Home</a>
+<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 </li>
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="#">Pages</a>
+
+<div class="nav-item dropdown text-white mx-lg-3 p-0">
+  <a aria-label="Home" href="#"  class="nav-link " data-bs-toggle="dropdown">
+    <span class="col-11 col-lg-8 text-start  text-nowrap "> Pages </span>
+  </a>
+  <div class="dropdown-menu m-0">
+    <a href="about.html" aria-label="Read About Us" class="dropdown-item">About Us</a>
+    <a aria-label="Read Solutions" class="dropdown-item">Solutions</a>
+    <a aria-label="Read Partners" class="dropdown-item">Partners</a>
+    <a aria-label="Read Gallery" class="dropdown-item">Gallery</a>
+    <a aria-label="Read Pricing" class="dropdown-item">Pricing</a>
+    <a aria-label="Read FAQ" class="dropdown-item">FAQ</a>
+  </div>
+</div>
+
 </li>
 <li class="nav-item">
 <a class="nav-link active" aria-current="page" href="#">Project</a>
@@ -108,10 +138,10 @@
  <a class="nav-link active" aria-current="page" href="#">Services</a>
 </li>
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="#">News</a>
+<a class="nav-link active" aria-current="page" href="news.html">News</a>
 </li>
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="#">Contact</a>
+<a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
 </li>
 </ul>
 
@@ -764,7 +794,7 @@
         <h4 class="footer-title">NEWSLETTER</h4>
         <form class="newsletter">
           <input type="text" placeholder="Your e-mail">
-          <button type="submit">SUBMIT</button>
+          <button type="submit" class="py-4">SUBMIT</button>
           <small>We promise that we wont spam you.</small>
         </form>
         <h4 class="footer-title">FINANCER</h4>
