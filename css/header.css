@@ -25,7 +25,7 @@ header {
     }
     header img {
         width: 100%;
-        padding: 15px;
+        padding:  15px;
     }
     header .links a {
         color: #3d404e;
@@ -72,9 +72,6 @@ header {
         border: none !important;
         box-shadow: none !important;
     }
-    /* header .navbar {
-        background-color: #fff;
-    } */
     header .links a {
         color: #fff !important;
         padding: 6px !important;
@@ -95,5 +92,35 @@ header {
     }
     #offcanvasNavbar a {
         color: white !important;
+    }
+    #goToTop {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        color: #fff;
+        background-color: #8a39ee;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    #goToTop i {
+        font-size: 1.5rem;
+    }
+    #goToTop {
+        opacity: 0;
+    }
+    .logo-dark {
+        display: none;
+    }
+    header.active {
+        background-color: #fff;
+    }
+    header.active nav a {
+        color: #333 !important;
+    }
+    header.active .logo-dark {
+        display: block;
+    }
+    header.active .logo-light {
+        display: none;
     }
     /*********************** Header **********************/
