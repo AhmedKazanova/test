@@ -32,11 +32,11 @@ header {
     header .links span {
         color: #3d404e;
         font-weight: 700;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         position: relative;
         display: block;
-        padding: 10px;
         cursor: pointer;
+        padding: 7px 0px;
     }
     header .links a:hover,
     header .links span:hover  {
@@ -81,7 +81,6 @@ header {
     header .links a,
     header .links span {
         color: #fff !important;
-        padding: 6px !important;
         font-size: 1.8rem !important;
     }
     .dropdown-menu {

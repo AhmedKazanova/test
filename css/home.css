@@ -53,26 +53,6 @@ section.highlights {
     padding: 100px 0px;
     text-align: center;
 }
-section.highlights h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: #9193a4;
-}
-section.highlights h6::after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background: #ffbb3f;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin-left: -15px;
-}
 section.highlights h2 {
     font-family: "Playfair Display";
     padding: 0 10%;
@@ -87,7 +67,7 @@ section.highlights img {
     margin-bottom: 20px;
 }
 section.highlights h4 {
-    font-size: 14px;
+    font-size: 2.7rem;
     font-weight: 600;
     color: #8a39ee;
     padding-bottom: 18px;
@@ -109,43 +89,22 @@ section.highlights p {
     line-height: 22px;
     color: #7d7a7a;
 }
+
+section.highlights a {
+    font-size: 1.8rem;
+    padding: 10px 40px;
+    display: inline-block;
+    color: #fff;
+    background: #ffbb3f;
+    font-weight: 700;
+    border-radius: 56px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
+    border: 2px solid transparent;
+}
+
+
 /* ************** highlights ************************* */
 
-/* ************ intro *********************** */
-section.intro  {
-    background-color: #fff;
-    width: 100%;
-    padding-bottom:50px;
-    text-align: center;
-}
-section.intro h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: #9193a4;
-}
-section.intro h6:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background: #ffbb3f;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin-left: -15px;
-}
-section.intro h2 {
-    font-family: "Playfair Display";
-    padding: 0 10%;
-    font-size: 40px;
-    line-height: 60px;
-    margin-bottom: 50px;
-}
-/* ************ intro *********************** */
 
 /* ************ featured-services *********************** */
 
@@ -170,25 +129,6 @@ section.featured-services:after {
 section.featured-services .container {
     position: relative;
     z-index: 2;
-}
-section.featured-services h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: rgba(255,2555,255,0.5);
-}
-.featured-services h6:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background: #ffbb3f;
-    position: absolute;
-    right: 0;
-    bottom: 0;
 }
 section.featured-services h2 {
     font-family: "Playfair Display";
@@ -226,156 +166,12 @@ section.featured-services h4 {
 }
 section.featured-services p {
     font-size: 1.6rem;
-    padding-left: 10%;
     color: #fff;
 }
 /* ************ featured-services *********************** */
 
-/* ************ featured-services *********************** */
-section.featured-solutions {
-    width: 100%;
-    background-color: #fff;
-    padding: 100px 0px !important;
-}
-.featured-solutions h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: #9193a4;
-}
-.featured-solutions h6:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background: #ffbb3f;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin-left: -15px;
-}
-.featured-solutions h2 {
-    font-family: "Playfair Display";
-    padding: 0 10%;
-    font-size: 40px;
-    line-height: 60px;
-    margin-bottom: 50px;
-}
-.featured-solutions .solution-box {
-    width: 100%;
-}
-.featured-solutions .solution-box .image {
-    width: 100%;
-    position: relative;
-    margin-bottom: 20px;
-}
-.featured-solutions .solution-box h4 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    color: #9193a4;
-    text-transform: uppercase;
-    position: relative;
-    font-family: "Playfair Display";
-}
-.featured-solutions .solution-box h4:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background: #ffbb3f;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.featured-solutions .solution-box p {
-    line-height: 25px;
-    padding-left: 10%;
-    color: #7d7a7a;
-    margin-bottom: 40px;
-    font-size: 1.6rem;
-}
-.featured-solutions .solution-box .image img {
-    width: 100%;
-    min-height:25rem;
-    max-height:25rem;
-}
-/* ************ featured-services *********************** */
 
 
-/* ************ featured-projects *********************** */
-
-section.featured-projects {
-    width: 100%;
-    padding: 100px 0;
-    background-color: #fff;
-}
-section.featured-projects h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: #9193a4;
-}
-section.featured-projects h2 {
-    font-family: "Playfair Display";
-    padding: 0 10%;
-    font-size: 40px;
-    line-height: 60px;
-    margin-bottom: 50px;
-}
-section.featured-projects .project-box {
-    width: 100%;
-    position: relative;
-    margin-bottom: 30px;
-    overflow: hidden;
-}
-section.featured-projects .project-box img {
-    width: 100%;
-}
-section.featured-projects .project-box:hover img{ -moz-transform: scale(1.1);  -webkit-transform: scale(1.1); transform: scale(1.1);}
-
-section.featured-projects .project-box figcaption {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0,0.3);
-    padding: 10% 20px;
-}
-section.featured-projects .project-box figcaption h4 {
-    font-family: "Playfair Display";
-    color: #fff;
-    font-size: 40px;
-    position: relative;
-    padding-bottom: 20px;
-}
-section.featured-projects .project-box figcaption h4:after {
-    content: "";
-    width: 30px;
-    height: 3px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: #ffbb3f;
-}
-section.featured-projects .project-box figcaption small {
-    height: 22px;
-    line-height: 22px;
-    display: inline-block;
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-/* ************ featured-projects *********************** */
 
 /* ************ our-skills *********************** */
 
@@ -383,25 +179,6 @@ section.our-skills{
     width: 100%;
     padding: 100px 0;
     background: #eeeff6;
-}
-section.our-skills h6{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e; 
-    position: relative; 
-    padding-bottom: 30px; 
-    color: #9193a4;
-}
-section.our-skills h6:after{
-    content: ''; 
-    width: 30px; 
-    height: 3px; 
-    background: #ffbb3f; 
-    position: absolute; 
-    right: 0; 
-    bottom: 0;
 }
 section.our-skills h2{
      font-family: "Playfair Display"; 
@@ -439,9 +216,9 @@ section.our-progress{
 /* PROGRESS BAR */
 .progress{ width:100%; height:8px;  box-shadow:none;}
 .progress .progress-bar{ width:100%;  background:#ffbb3f; box-shadow:none;}
-.animated.first{ width:75% !important;}
-.animated.second{ width:91% !important;}
-.animated.third{ width:88% !important;}
+.animated.first{ width:100% !important;}
+.animated.second{ width:100% !important;}
+.animated.third{ width:100% !important;}
 
 /* ************ our-skills *********************** */
 
@@ -569,26 +346,6 @@ section.right-side-content .side-image .bg-image{
      -webkit-filter: grayscale(100%) contrast(1); 
      filter: grayscale(100%); opacity: 0.2;
 }
-section.right-side-content h6{ 
-    text-transform: uppercase; 
-    font-weight: 700; 
-    font-size: 14px; 
-    letter-spacing: 0.4px; 
-    color: #3d404e; 
-    position: relative; 
-    padding-bottom: 30px; 
-    color: #9193a4;
-    text-align: end;
-}
-section.right-side-content h6:after{
-    content: ''; 
-    width: 30px; 
-    height: 3px; 
-    background: #ffbb3f; 
-    position: absolute; 
-    left: 0; 
-    bottom: 0;
-}
 section.right-side-content h2{ 
     font-family: "Playfair Display"; 
     padding: 0; 
@@ -670,25 +427,6 @@ section.left-side-content .side-image .bg-image{
     filter: grayscale(100%); 
     opacity: 0.2;
 }
-section.left-side-content h6{
-     text-transform: uppercase; 
-     font-weight: 700; 
-     font-size: 14px; 
-     letter-spacing: 0.4px; 
-     color: #3d404e; 
-     position: relative; 
-     padding-bottom: 30px; 
-     color: #9193a4;
-}
-section.left-side-content h6:after{
-    content: ''; 
-    width: 30px; 
-    height: 3px; 
-    background: #ffbb3f; 
-    position: absolute; 
-    right: 0; 
-    bottom: 0;
-}
 section.left-side-content h2{
      font-family: "Playfair Display"; 
      padding: 0; 
@@ -709,111 +447,25 @@ section.left-side-content .content-image img{
      width: 100%; 
      box-shadow: 0 20px 30px rgba(0,0,0,0.20);
 }
-section.left-side-content a{
-    font-size: 1.6rem;
-     line-height: 52px; 
-     padding:10px 40px; 
-     display:inline-block; 
-     color:#fff; 
-     background: #ffbb3f; 
-     font-weight:700; 
-     border-radius: 56px; 
-     box-shadow: 0 20px 30px rgba(0,0,0,0.05); 
-     border:2px solid transparent;
-}
-section.left-side-content a:hover{
-     background: #fff; 
-     color: #ffbb3f; 
-     border: 2px solid #ffbb3f; 
-     text-decoration: none;
-}
 /* ************ left-side-content *********************** */
 
 
- /* ************ WORK PROCESS *********************** */   
-section.work-process{
-     width:100%; 
-     background-color: #fff; 
-     text-align:center; 
-     padding:100px 0; 
-}
-section.work-process h6{
-     text-transform: uppercase; 
-     font-weight: 700; 
-     font-size: 14px; 
-     letter-spacing: 0.4px; 
-     color: #3d404e; 
-     position: relative; 
-     padding-bottom: 30px; 
-     color: #9193a4;
-}
-section.work-process h6:after{
-    content: ''; 
-    width: 30px; 
-    height: 3px; 
-    background: #ffbb3f; 
-    position: absolute; 
-    left: 50%; 
-    bottom: 0;
-    margin-left: -15px;
-}
-section.work-process h2{ 
-    font-family: "Playfair Display"; 
-    padding: 0 10%; 
-    font-size: 40px; 
-    line-height: 60px; 
-    margin-bottom: 50px;
-}
-section.work-process .circles{ 
-    width:100%; 
-    background-repeat:no-repeat;
-    background-image:url(../images/process-circles.png); 
-    background-size:100% auto;
-}
-section.work-process .circles .icon-border{ 
-    width: 268px;
-    height:268px; 
-    border-radius:268px; 
-    display:inline-block; 
-    overflow:hidden; 
-    border:2px solid #eee; 
-    text-align:center; 
-    padding-top:20px;
-}
-section.work-process .circles .icon-border:hover{ 
-    border:2px solid #ffbb3f;
-}
-section.work-process .circles .icon-border:hover i {color:#ffbb3f;}
-section.work-process .circles .icon-border i{
-    font-size: 70px; 
-    color: #000; 
-    margin-top:31px; 
-    display: inline-block;
-}
-section.work-process .circles .icon-border span{ 
-    width:100%; 
-    display:inline-block; 
-    color:#9193a4; 
-    font-size:22px; 
-    font-weight:700; 
-    padding-top:15px; 
-    position:relative;
-}
-section.work-process .circles .icon-border span:after{
-    content:''; 
-    width:30px; 
-    height:3px; 
-    background:#ffbb3f; 
-    position:absolute; 
-    left:50%; 
-    top:0; 
-    margin-left:-15px;
-}
- /* ************ WORK PROCESS *********************** */   
 
 
+.headDiv {
+    color: #333;
+    position: relative;
+}
 
-
+.headDiv::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ffbb3f;
+}
 
 
 
@@ -840,9 +492,7 @@ section.work-process .circles .icon-border span:after{
     section.right-side-content .side-image:after{
         display: none !important;
     }
-    section.work-process .circles {
-        background-image: none !important;
-    }
+
     
 }
  
@@ -871,10 +521,6 @@ section.work-process .circles .icon-border span:after{
 	.gallery ul li{ width: 100%;}
 	.gallery ul li.big{ width: 100%;}
 	.partners ul li{ width: 100%;}
-	.work-process .circles{height: auto;}
-	.work-process .circles .text-left{text-align: center;}
-	.work-process .circles .text-right{text-align: center;}
-	.work-process .circles .icon-border{ margin-bottom: 15px;}
 	.our-offices .office-box{ width: 100%;}
 	.support .support-box{text-align: center;}
 	.support .support-box img{  margin-bottom: 10px;}

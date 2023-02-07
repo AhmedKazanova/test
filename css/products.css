@@ -1,0 +1,68 @@
+
+
+
+/* products */
+.products{ 
+    width: 100%; 
+    padding: 100px 0;
+}
+.products h2{ 
+    font-family: "Playfair Display"; 
+    padding: 0 10%; 
+    font-weight: 600;
+    font-size: 50px; 
+    line-height: 60px; 
+    margin-bottom: 50px;
+}
+.products .placeholder {
+    overflow: hidden;
+    position: relative;
+}
+.products .placeholder::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    height: 2px;
+    background-color: #ffbb3f;
+}
+.products i{ 
+    width:80px; 
+    height: 80px; 
+    border: 3px solid rgba(0,0,0,0.1); 
+    border-radius: 50%; 
+    font-size:40px; 
+    margin-bottom:60px; 
+    color:#ffbb3f;
+    text-align: center; 
+    line-height: 74px; 
+    margin-right: 20px;
+    display: block;
+}
+.products h4{ 
+    font-weight:700; 
+    font-size:18px; 
+    color:#ffbb3f; 
+    font-family: "Playfair Display"; 
+    position: relative; 
+    padding-bottom: 15px;
+}
+.products h4:after{
+    content: ''; 
+    width: 50px; 
+    height: 2px; 
+    background: #ffbb3f; 
+    position: absolute; 
+    right:0px; 
+    bottom: 0;
+}
+.products p{ 
+    font-size:1.8rem; 
+    margin-bottom:60px;
+}
+
+.products .digit {
+    color: #ffbb3f;
+    margin: 0px 3px;
+}
