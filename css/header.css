@@ -17,28 +17,33 @@ header {
     }
     header .TobBar ul li {
         margin-right: 20px;
+        text-align: center !important;
     }
     header .TobBar ul li a {
         color: #fff;
         font-weight: 600;
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
     header img {
         width: 100%;
-        padding:  15px;
+        object-fit: contain;
     }
-    header .links a {
+    header .links a,
+    header .links span {
         color: #3d404e;
         font-weight: 700;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         position: relative;
         display: block;
         padding: 10px;
+        cursor: pointer;
     }
-    header .links a:hover {
+    header .links a:hover,
+    header .links span:hover  {
         color: #ffbb3f;
     }
-    header .links a::after {
+    header .links a::after,
+    header .links span::after  {
         content: "";
         position: absolute;
         bottom: 0px;
@@ -48,7 +53,8 @@ header {
         width: 0;
         background-color: #ffbb3f;
     }
-    header .links a:hover::after {
+    header .links a:hover::after ,
+    header .links span:hover::after {
         width: 100%;
         transition: 0.4s;
     }
@@ -72,10 +78,11 @@ header {
         border: none !important;
         box-shadow: none !important;
     }
-    header .links a {
+    header .links a,
+    header .links span {
         color: #fff !important;
         padding: 6px !important;
-        font-size: 1.5rem !important;
+        font-size: 1.8rem !important;
     }
     .dropdown-menu {
         border: none !important;
@@ -113,8 +120,10 @@ header {
     }
     header.active {
         background-color: #fff;
+        border-bottom: 2px solid #eee;
     }
-    header.active nav a {
+    header.active nav a,
+    header.active .links span {
         color: #333 !important;
     }
     header.active .logo-dark {
@@ -124,3 +133,10 @@ header {
         display: none;
     }
     /*********************** Header **********************/
+
+
+
+
+
+
+

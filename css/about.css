@@ -8,32 +8,29 @@
      padding:100px 0; 
      text-align: center;
 }
-.main-partners h6{
-     text-transform: uppercase; 
-     font-weight: 700; 
-     font-size: 14px; 
-     letter-spacing: 0.4px; 
-     color: #3d404e; 
-     position: relative; 
-     padding-bottom: 30px; 
-     color: #9193a4;
-}
-.main-partners h6:after{
-    content: ''; 
-    width: 30px; 
-    height: 3px; 
-    background: #ffbb3f; 
-    position: absolute; 
-    left: 50%; 
-    bottom: 0; 
-    margin-left: -15px;
+.main-partners .title {
+    color: #ffbb3f;
 }
 .main-partners h2{ 
     font-family: "Playfair Display"; 
     padding: 0 10%; 
-    font-size: 40px; 
+    font-weight: 600;
+    font-size: 50px; 
     line-height: 60px; 
     margin-bottom: 50px;
+}
+.main-partners .placeholder {
+    overflow: hidden;
+    position: relative;
+}
+.main-partners .placeholder::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    height: 2px;
+    background-color: #ffbb3f;
 }
 .main-partners a{ 
     height: 56px; 
@@ -47,230 +44,15 @@
     box-shadow: 0 20px 30px rgba(0,0,0,0.05);
     border:2px solid transparent;
 }
-.main-partners ul{ 
-    width:100%; 
-    margin:0; 
-    padding:0;
+.main-partners p {
+    font-size: 2.2rem;
+    margin: 20px 0px;
+    font-weight: 300;
 }
-.main-partners ul li{  
-    list-style:none; 
-    position: relative;
-}
-.main-partners ul li:after{ 
-    content: ''; 
-    width: 1px; 
-    height: 30px; 
-    background:rgba(0,0,0,0.1); 
-    position: absolute; 
-    right: 0; 
-    top: 50%; 
-    margin-top: -15px;
-}
-.main-partners ul li:last-child:after{display: none;}
-
-.main-partners ul li img{ width:100%; opacity:0.3;}
-
-.main-partners ul li:hover img{ opacity:0.6;}
 /* ************* main-partners ********************* */
 
 
 
-/* ************* team ********************* */
-.team {
-    width: 100%;
-    padding: 100px 0;
-    text-align: center;
-}
-.team h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: #9193a4;
-}
-.team h2 {
-    font-family: "Playfair Display";
-    padding: 0 10%;
-    font-size: 40px;
-    line-height: 60px;
-    margin-bottom: 50px;
-}
-.team .member {
-    width: 100%;
-}
-.team .member img {
-    width: 100%;
-}
-.team .member figcaption {
-    width: 100%;
-    border-top: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
-}
-.team .member figcaption h4 {
-    margin-top: 0;
-    font-weight: 600;
-}
-.team .member figcaption small {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-.team .member figcaption ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
-.team .member figcaption ul li {
-    margin: 0;
-    margin-right: 10px;
-    padding: 0;
-    list-style: none;
-    font-size: 1.5rem;
-}
-.team .member figcaption ul li a {
-    color: #8a39ee;
-    font-size: 1.5rem;
-}
-
-
-/* ************* team ********************* */
-
-
-/* ************* fun-facts ********************* */
-.fun-facts {
-    width: 100%;
-    background: #8a39ee;
-}
-.fun-facts .feature-box {
-    width: 100%;
-    padding: 15vh calc(25vw - 220px);
-    text-align: center;
-    border-left: 1px solid #888;
-}
-.fun-facts .feature-box i {
-    font-size: 60px;
-    color: #fff;
-    margin-bottom: 20px;
-}
-.flaticon-014-smartphone-3:before {
-    content: "\f10d";
-}
-.fun-facts .feature-box .feature-title {
-    color: #fff;
-    padding-bottom: 0;
-    position: relative;
-    font-weight: 900;
-}
-.fun-facts .feature-box .odometer {
-    font-family: 'Fjalla One', sans-serif;
-    color: #fff;
-    font-size: 50px;
-}
-.fun-facts .feature-box .symbol {
-    display: inline-block;
-    font-family: 'Fjalla One', sans-serif;
-    color: #fff;
-    opacity: 0.6;
-    font-size: 30px;
-    -webkit-transform: translateY(-9px);
-    font-size: 22px;
-}
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-car .odometer-digit {
-    padding: 0;
-}
-.flaticon-015-smartphone-2:before {
-    content: "\f10e";
-}
-.flaticon-016-smartphone-1:before {
-    content: "\f10f";
-}
-
-/* ************* fun-facts ********************* */
-
-/* ************* projects ********************* */
-.projects{
-     width:100%;
-    padding:100px 0;
-}
-.projects h6{ 
-    text-transform: uppercase; 
-    font-weight: 700; 
-    font-size: 14px; 
-    letter-spacing: 0.4px; 
-    color: #3d404e; 
-    position: relative; 
-    padding-bottom: 30px; 
-    color: #9193a4;
-}
-.projects h6:after{
-    content: ''; 
-    width: 30px; 
-    height: 3px; 
-    background: #ffbb3f; 
-    position: absolute; 
-    left: 50%; 
-    bottom: 0; 
-    margin-left: -15px;
-}
-.projects h2{ 
-    font-family: "Playfair Display"; 
-    padding: 0 10%; 
-    font-size: 40px; 
-    line-height: 60px; 
-    margin-bottom: 50px;
-}
-.projects .project-box{ 
-    width:100%; 
-    position:relative; 
-    margin-bottom:30px;
-     overflow: hidden;
-}
-.projects .project-box img{ width:100%}
-.projects .project-box:hover img{ 
-    -moz-transform: scale(1.1);  
-    -webkit-transform: scale(1.1); 
-    transform: scale(1.1);
-}
-.projects .project-box figcaption{ 
-    width:100%; 
-    height:100%; 
-    position:absolute; 
-    left:0; 
-    top:0; 
-    background:rgba(0,0,0,0.3); 
-    padding:10% 20px; 
-}
-.projects .project-box figcaption h4{
-    font-family:"Playfair Display"; 
-    color:#fff; 
-    font-size:40px; 
-    position: relative; 
-    padding-bottom: 20px;
-}
-.projects .project-box figcaption h4:after{
-    content: ""; 
-    width: 30px; 
-    height: 3px; 
-    position: absolute; 
-    left: 0; 
-    bottom: 0; 
-    background: #ffbb3f;
-}
-.projects .project-box figcaption small{ 
-    height:22px; 
-    line-height:22px; 
-    display:inline-block; 
-    color:#fff;
-}
-
-/* ************* projects ********************* */
 
 
 

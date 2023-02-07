@@ -5,26 +5,33 @@
     text-align: center;
 }
 
-.contact h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    color: #3d404e;
-    position: relative;
-    padding-bottom: 30px;
-    color: #9193a4;
-}
 .contact h2 {
-    font-family: "Playfair Display";
-    padding: 0 10%;
-    font-size: 40px;
-    line-height: 60px;
+    font-family: "Playfair Display"; 
+    padding: 0 10%; 
+    font-weight: 600;
+    font-size: 50px; 
+    line-height: 60px; 
     margin-bottom: 50px;
+}
+.contact .placeholder {
+    overflow: hidden;
+    position: relative;
+}
+.contact .placeholder::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    height: 2px;
+    background-color: #ffbb3f;
+}
+.title {
+    color: #ffbb3f;
 }
 p {
     color: #7d7a7a;
-    margin-bottom: 15px;
+    margin: 20px 0px;
     font-size: 1.6rem;
 }
 .contact p span {
@@ -35,32 +42,11 @@ b, strong {
     font-weight: 700;
     font-size: 1.6rem;
 }
-.contact p .mail {
-    text-decoration: underline;
-    margin-bottom: 40px;
-    display: block;
-    font-size: 1.6rem;
+
+.contact .social a{
+    font-size: 4.3rem;
+    margin: 20px;
 }
-.contact h6:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background: #ffbb3f;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin-left: -15px;
-}
-.contact p .map {
-    line-height: 56px;
-    padding: 10px 40px;
-    display: inline-block;
-    color: #fff;
-    background: #ffbb3f;
-    font-weight: 700;
-    border-radius: 56px;
-    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
-    border: 2px solid transparent;
-    position: relative;
-    margin-top: 60px;
+.contact .social i {
+    color: #ffbb3f;
 }
