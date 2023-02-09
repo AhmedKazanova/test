@@ -14,9 +14,9 @@
 .footer .video .play-btn:after{content: ''; width: 86px; height: 86px; position: absolute; left: -12px; top: -12px; border-radius: 50%;  border: 10px solid rgba(0,0,0,0.3); }
 .footer .video .play-btn:hover{ text-decoration: none; box-shadow: 0 20px 30px rgba(0,0,0,0.20);}
 .footer .footer-menu{ width:100%;  margin:0; margin-top:-4px; padding:0;}
-.footer .footer-menu li{ width:50%;  margin:0; margin-bottom:8px; padding:0; list-style:none;}
+.footer .footer-menu li{ width:50%;  margin:10px 0px; margin-bottom:8px; padding:10px 0px; list-style:none;text-align: center;}
 .footer .footer-menu li a{ font-size: 1.6rem; color:#fff;}
-.footer .sub-footer{ width:100%; ; background:rgba(255,255,255,1); margin-top:40px; padding:20px 0;}
+.footer .sub-footer{ width:100%; ; background:rgba(255,255,255,1); padding:20px 0;}
 .footer .sub-footer .container{ font-size:12px; color:#7d7a7a;}
 .footer .sub-footer .container a{font-size: 1.6rem; color:#7d7a7a; font-weight:700;}
 .footer .sub-footer .container span{font-size: 1.6rem; color:#ffbb3f;}
